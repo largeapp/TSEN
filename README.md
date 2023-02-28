@@ -8,5 +8,4 @@ See the following publications for examples of this code in use:
 [construct_graph.py](construct_graph.py) is the code of constructing graph for PyTorch Geometric (PyG).  
 [focal_loss.py](focal_loss.py) is the code of focal loss.  
 [scheduler.py](scheduler.py) is the code of scheduler for learning rate.  
-[sten_abide.py](sten_abide.py) is the code for STEN model for ABIDE dataset.  
-[sten_cox2.py](sten_cox2.py) is the code for STEN model for cox2 dataset.  
+[sten.py](sten.py) is the code for STEN model.  
