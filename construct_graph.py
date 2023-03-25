@@ -35,7 +35,7 @@ def read_data(features, adjs, Y):
         adj = adjs[i]
         adj = sp.coo_matrix(adj)
         values = adj.data[:,np.newaxis]
-        indices = np.vstack((adj.row, adj.col))  # 我们真正需要的coo形式
+        indices = np.vstack((adj.row, adj.col))  
         adj = torch.LongTensor(indices)
         #values = torch.FloatTensor(values)
         values = torch.from_numpy(values)
@@ -67,13 +67,13 @@ class RESTDataset(InMemoryDataset):
     @property
     def raw_file_names(self):
         return ['feature_z_200.npy', '/cc200_0.4.npy', 'Y_label.npy']
-    #返回process方法所需的保存文件名。你之后保存的数据集名字和列表里的一致
+    
     @property
     def processed_file_names(self):
         return ['rest-data.pt']
 
 
-    #生成数据集所用的方法
+   
     def process(self):
         # Read data into huge `Data` list.
         data_list = read_data(self.raw_dir+'/feature_z_200.npy',self.raw_dir+'/cc200_0.4.npy',self.raw_dir+'/Y_label.npy')
@@ -154,7 +154,7 @@ for i in range(len(adjs)):
     adj = adjs[i]
     adj = sp.coo_matrix(adj)
     values = adj.data
-    indices = np.vstack((adj.row, adj.col))  # 我们真正需要的coo形式
+    indices = np.vstack((adj.row, adj.col))  
     adj = torch.LongTensor(indices)
     #print(adj)
     #adjs[i] = adj
