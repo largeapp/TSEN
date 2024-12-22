@@ -1,7 +1,7 @@
 # Graph Transformer Encoding Networks
 This is a repository of codes and experiment results for research on transformer and snowball encoding networks for graph classification, using PyTorch as backend.
 
-Our research collection on artificial intelligence for brain image analysis is available on [this page](https://github.com/largeapp/AI-for-Brain-Image-Analysis).
+Our research collection on artificial intelligence for brain image analysis is available on [this link](https://github.com/largeapp/AI-for-Brain-Image-Analysis).
 
 ### Publication
 **Transformer and Snowball Graph Convolution Learning for Brain Functional Network Analysis**
